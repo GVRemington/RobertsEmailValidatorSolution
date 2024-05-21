@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using
 
 namespace RobertsEmailValidatorProject
 {
@@ -27,12 +28,12 @@ namespace RobertsEmailValidatorProject
         {
             string _email = email;
             char[] chars = _email.ToCharArray();
-            int at = email.IndexOf(char @);
+            int at = email.IndexOf('@');
             string afterAt = email.Substring(at+2);
             char dot = '.';
             bool isValid = false;
 
-            if (at > -1 || IsLetterOrDigit(chars[at - 1]) || IsLetterOrDigit(chars[at + 1] || afterAt.Contains(dot))
+            if (at > -1 || char.IsLetterOrDigit(chars[at - 1]) || char.IsLetterOrDigit(chars[at + 1]) || afterAt.Contains(dot))
                 {  isValid = true; }
             else 
             { 
