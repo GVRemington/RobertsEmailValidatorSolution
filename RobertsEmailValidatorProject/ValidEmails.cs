@@ -17,11 +17,6 @@ namespace RobertsEmailValidatorProject
             bool isValid = false;
 
             if (_email != null) { isValid = true; }
-            else
-            {
-                Console.WriteLine("Email is Required");
-            }
-
             return isValid;
 
         }
@@ -30,18 +25,20 @@ namespace RobertsEmailValidatorProject
             string _email = email;
             char[] chars = _email.ToCharArray();
             bool containsAt = email.Contains('@');
-            int at = email.IndexOf('@');
-            string afterAt = email.Substring(at+2);
             char dot = '.';
             bool isValid = false;
 
-            if (containsAt == false)
-                {  isValid = false; }
+            if (containsAt == true) 
+
+                {
+                    int at = email.IndexOf('@');
+                    string afterAt = email.Substring(at + 2);
+
+                        if ( char.IsLetterOrDigit(chars[at - 1]) || char.IsLetterOrDigit(chars[at + 1]) || afterAt.Contains(dot))
+                        { isValid = true; }
+                }
             
-            else if ( char.IsLetterOrDigit(chars[at - 1]) || char.IsLetterOrDigit(chars[at + 1]) || afterAt.Contains(dot)) 
-            { 
-                isValid = true;
-            }
+           
             return isValid;
         }
          //|| char.IsLetterOrDigit(chars[at - 1]) || char.IsLetterOrDigit(chars[at + 1]) || afterAt.Contains(dot)
