@@ -7,7 +7,7 @@
         <Parameter name= "badBeforeAtEmail" value="rayleen#@centralia.edu"/>
         <Parameter name= "badAfterAtEmail" value="rayleen@#centralia.edu"/>
         <Parameter name= "badDotBeforeAtEmail" value="Rayleen.Roberts@centralia.edu"/>
-        <Parameter name= "MissingDotAfterAtEmail" value="rayleencentralia.edu"/>
+        <Parameter name= "MissingDotAfterAtEmail" value="rayleencentralia@edu"/>
         <Parameter name= "badResult" value= "false"/>
     </TestRunParameters>
     <LoggerRunSettings>

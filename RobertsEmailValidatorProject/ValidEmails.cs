@@ -33,7 +33,7 @@ namespace RobertsEmailValidatorProject
             char dot = '.';
             bool isValid = false;
 
-            if (at > -1 || char.IsLetterOrDigit(chars[at - 1]) || char.IsLetterOrDigit(chars[at + 1]) || afterAt.Contains(dot))
+            if (at > -1  || char.IsLetterOrDigit(chars[at - 1]) || char.IsLetterOrDigit(chars[at + 1]) || afterAt.Contains(dot))
                 {  isValid = true; }
             else 
             { 

@@ -47,7 +47,7 @@ namespace ValidEmailTest
         public void lDBeforeAtTest()
         {
             TestContext.WriteLine("Currently in Test: " + TestContext.TestName);
-            string _email = TestContext.Properties["goodAtEmail"].ToString();
+            string _email = TestContext.Properties["goodEmail"].ToString();
             bool Result = ValidEmails.ContainsAtSymbol(_email);
             Assert.IsTrue(Result);
 
