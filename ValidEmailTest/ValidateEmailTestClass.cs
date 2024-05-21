@@ -40,7 +40,7 @@ namespace ValidEmailTest
             TestContext.WriteLine("Currently in Test: " + TestContext.TestName);
             string _email = TestContext.Properties["badAtEmail"].ToString();
             bool badResult = ValidEmails.ContainsAtSymbol(_email);
-            Assert.IsTrue(badResult);
+            Assert.IsFalse(badResult);
 
         }
         [TestMethod]
