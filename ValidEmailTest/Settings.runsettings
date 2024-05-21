@@ -1,7 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <RunSettings>
     <TestRunParameters>
-        <Parameter name="param1" value ="rayleen3@centralia.edu"/>
+        <Parameter name="goodEmail" value="rayleen3@centralia.edu"/>
+        <Parameter name= "nullEmail" value=""/>
+        <Parameter name= "badAtEmail" value="rayleencentralia.edu"/>
+        <Parameter name= "badBeforeAtEmail" value="rayleen#@centralia.edu"/>
+        <Parameter name= "badAfterAtEmail" value="rayleen@#centralia.edu"/>
+        <Parameter name= "badDotBeforeAtEmail" value="Rayleen.Roberts@centralia.edu"/>
+        <Parameter name= "MissingDotAfterAtEmail" value="rayleencentralia.edu"/>
+        <Parameter name= "badResult" value= "false"/>
     </TestRunParameters>
     <LoggerRunSettings>
         <Loggers>
